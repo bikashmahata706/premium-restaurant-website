@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Premium Restaurant</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Animate.css for animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo1.png" alt="Logo" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="btn btn-warning ms-3" href="reservation.html">Book A Table</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero d-flex align-items-center justify-content-center position-relative" style="background: url('assets/images/hero4.jpg') no-repeat center center/cover; height: 100vh;">
+    <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5);"></div>
+    <div class="text-center text-white z-1 animate__animated animate__fadeInDown">
+      <h1 class="display-3 fw-bold hero-title">
+        <span class="word">Welcome</span> 
+        <span class="word">to</span> 
+        <span class="word">Our</span> 
+        <span class="word">Premium</span> 
+        <span class="word">Restaurant</span>
+      </h1>
+
+      <p class="lead">Fine Dining Experience & Delicious Memories</p>
+      <a href="reservation.html" class="btn btn-lg btn-warning mt-3 book-btn">Book Your Table</a>
+    </div>
+  </header>
+
+  <!-- Featured Dishes Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="mb-4 animate__animated animate__fadeInUp text-center">Our Signature Dishes</h2>
+    <div class="row g-4 mb-4">
+    
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="menu-item p-3 rounded shadow-sm">
+        <img src="assets/images/menu/dessert1.jpg" class="img-fluid rounded" alt="Cheesecake">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Cheesecake</h5>
+            <span class="text-warning fw-bold">$7</span>
+        </div>
+        <p class="text-muted mt-2">Rich creamy cheesecake with berry topping.</p>
+        <div class="text-center mt-3">
+            <button class="btn btn-sm btn-warning px-4 add-to-cart" data-name="Cheesecake" data-price="7">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="menu-item p-3 rounded shadow-sm">
+        <img src="assets/images/menu/dessert2.jpg" class="img-fluid rounded" alt="Chocolate Lava Cake">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Chocolate Lava Cake</h5>
+            <span class="text-warning fw-bold">$9</span>
+        </div>
+        <p class="text-muted mt-2">Warm chocolate cake with molten center.</p>
+        <div class="text-center mt-3">
+            <button class="btn btn-sm btn-warning px-4 add-to-cart" data-name="Chocolate Lava Cake" data-price="9">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="menu-item p-3 rounded shadow-sm">
+        <img src="assets/images/menu/dessert3.jpg" class="img-fluid rounded" alt="Tiramisu">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Tiramisu</h5>
+            <span class="text-warning fw-bold">$8</span>
+        </div>
+        <p class="text-muted mt-2">Classic Italian dessert with coffee & mascarpone.</p>
+        <div class="text-center mt-3">
+            <button class="btn btn-sm btn-warning px-4 add-to-cart" data-name="Tiramisu" data-price="8">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- Menu Button -->
+    <div class="text-center">
+      <a href="menu.html" class="btn btn-outline-warning btn-lg mt-1 animate__animated animate__fadeInUp">
+        View Full Menu
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">© 2025 My Premium Restaurant | Designed by Bikash</p>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="assets/js/jQuery.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/script.js"></script>
+
+
+  <script>
+        document.querySelectorAll('.add-to-cart').forEach(btn => {
+            btn.addEventListener('click', () => {
+            const itemName = btn.getAttribute('data-name');
+            const itemPrice = btn.getAttribute('data-price');
+
+            // Save to localStorage
+            localStorage.setItem('cartItemName', itemName);
+            localStorage.setItem('cartItemPrice', itemPrice);
+
+            // Redirect to payment page
+            window.location.href = 'payment.html';
+            });
+        });
+    </script>
+
+</body>
+</html>

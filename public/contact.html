@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | My Premium Restaurant</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar (Same as index) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo1.png" alt="Logo" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
+          <li class="nav-item">
+            <a class="btn btn-warning ms-3" href="reservation.html">Book A Table</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <header class="menu-hero d-flex align-items-center justify-content-center" data-aos="fade-in" style="background: url('assets/images/menu-banner3.jpg') no-repeat center center/cover; height: 40vh;">
+  <h1 class="text-white display-4 fw-bold hero-title" data-aos="fade-down" data-aos-delay="100">
+    <span class="word">Contact</span> 
+    <span class="word">Us</span> 
+  </h1>
+</header>
+
+  <!-- Contact Info & Form -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Contact Info -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="mb-4">Visit Us</h2>
+          <p data-aos="fade-up"><strong>Address:</strong> 123 Gourmet Street, Food City, FL 12345</p>
+          <p data-aos="fade-up"><strong>Phone:</strong> +1 (234) 567-8901</p>
+          <p data-aos="fade-up"><strong>Email:</strong> info@mypremiumrestaurant.com</p>
+
+          <!-- Google Map Embed -->
+          <div class="ratio ratio-16x9 rounded shadow">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456!2d-122.41941548468125!3d37.77492977975816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064b1a1!2sSome%20Famous%20Restaurant!5e0!3m2!1sen!2sus!4v1687865432109!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="mb-4">Send Us a Message</h2>
+          <form action="/contact" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="fullname" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="address" rows="5" class="form-control" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning px-4">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">© 2025 My Premium Restaurant | Designed by Bikash</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

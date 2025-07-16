@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | My Premium Restaurant</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo1.png" alt="Logo" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="btn btn-warning ms-3" href="reservation.html">Book A Table</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <header class="menu-hero d-flex align-items-center justify-content-center" data-aos="fade-in" style="background: url('assets/images/menu-banner3.jpg') no-repeat center center/cover; height: 40vh;">
+  <h1 class="text-white display-4 fw-bold hero-title" data-aos="fade-down" data-aos-delay="100">
+    <span class="word">About</span> 
+    <span class="word">Us</span> 
+  </h1>
+</header>
+
+  <!-- About Content -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6" data-aos="fade-right">
+          <img src="assets/images/restaurant-interior.png" class="img-fluid rounded shadow" alt="Restaurant Interior">
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h2>Our Story</h2>
+          <p>Founded in 2010, My Premium Restaurant has been delighting guests with authentic culinary experiences crafted with passion, love, and a dedication to excellence. Our vision has always been to bring gourmet dining to everyone in a warm, welcoming atmosphere that feels like home for all food lovers.</p>
+          <p>We are committed to using the freshest ingredients, creating innovative recipes, and serving every dish with genuine care. For us, food is not just about taste — it’s about creating moments, memories, and a sense of belonging that makes every guest feel like a cherished part of our family.</p>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-md-2" data-aos="fade-left">
+          <img src="assets/images/chef2.jpg" class="img-fluid rounded shadow" alt="Head Chef">
+        </div>
+        <div class="col-md-6 order-md-1" data-aos="fade-right">
+          <h2>Meet Our Chef</h2>
+          <p>Chef Antonio Rossi, our esteemed master chef, brings with him over 20 years of culinary mastery from some of Italy’s most renowned kitchens. With a deep respect for tradition and a passion for innovation, Chef Antonio artfully blends classic Italian flavors with modern techniques, crafting dishes that are authentic, soulful, and truly unforgettable.</p>
+          <p>Under his guidance, every plate becomes a celebration of taste and love, inviting you to experience the genuine warmth and rich heritage of Italian cuisine, right here at My Premium Restaurant.</p>
+        </div>
+      </div>
+
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2>Our Team</h2>
+        <p>Behind every unforgettable meal is a passionate team. From our skilled chefs who craft each dish with love, to our warm and attentive servers who make you feel right at home — every member of our team shares one goal: to give you an exceptional dining experience, every single time. We believe that great food is only half the story; it’s the people who prepare, serve, and welcome you that truly make My Premium Restaurant feel special. Together, we are more than just a team — we are a family dedicated to making your moments here delicious and memorable.</p>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-4 mb-4" data-aos="zoom-in">
+          <img src="assets/images/team1.jpg" class="rounded-circle mb-3" width="150" alt="Team Member 1">
+          <h5>Maria Lopez</h5>
+          <p class="text-muted">Sous Chef</p>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <img src="assets/images/team2.jpg" class="rounded-circle mb-3" width="150" alt="Team Member 2">
+          <h5>John Smith</h5>
+          <p class="text-muted">Restaurant Manager</p>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/images/team3.jpg" class="rounded-circle mb-3" width="150" alt="Team Member 3">
+          <h5>Sophia Chen</h5>
+          <p class="text-muted">Pastry Chef</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">© 2025 My Premium Restaurant | Designed by Bikash</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

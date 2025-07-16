@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Menu | My Premium Restaurant</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+</head>
+<body>
+
+  <!-- Navbar (Same as index) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo1.png" alt="Logo" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="btn btn-warning ms-3" href="reservation.html">Book A Table</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <header class="menu-hero d-flex align-items-center justify-content-center" data-aos="fade-in" style="background: url('assets/images/menu-banner3.jpg') no-repeat center center/cover; height: 40vh;">
+  <h1 class="text-white display-4 fw-bold hero-title" data-aos="fade-down" data-aos-delay="100">
+    <span class="word">Our</span> 
+    <span class="word">Delicious</span> 
+    <span class="word">Menu</span>
+  </h1>
+</header>
+
+  <!-- Menu Section -->
+  <section class="py-5">
+    <div class="container">
+      
+    <!-- Starters -->
+    <h2 class="text-center mb-4" data-aos="fade-up">Starters</h2>
+    <div class="row g-4 mb-5">
+    
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="menu-item p-3 rounded shadow-sm">
+        <img src="assets/images/menu/starters1.jpg" class="img-fluid rounded" alt="Bruschetta">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Bruschetta</h5>
+            <span class="text-warning fw-bold">$8</span>
+        </div>
+        <p class="text-muted mt-2">Grilled bread with garlic, tomatoes, olive oil & basil.</p>
+        <div class="text-center mt-4">
+            <button class="btn btn-sm btn-warning px-4 add-to-cart" data-name="Bruschetta" data-price="8">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="menu-item p-3 rounded shadow-sm">
+        <img src="assets/images/menu/starters2.jpg" class="img-fluid rounded" alt="Stuffed Mushrooms">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Stuffed Mushrooms</h5>
+            <span class="text-warning fw-bold">$10</span>
+        </div>
+        <p class="text-muted mt-2">Mushrooms filled with cheese & herbs.</p>
+        <div class="text-center mt-4">
+            <button class="btn btn-sm btn-warning px-4 add-to-cart" data-name="Stuffed Mushrooms" data-price="10">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="menu-item p-3 rounded shadow-sm">
+        <img src="assets/images/menu/starters3.jpg" class="img-fluid rounded" alt="Shrimp Cocktail">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Shrimp Cocktail</h5>
+            <span class="text-warning fw-bold">$12</span>
+        </div>
+        <p class="text-muted mt-2">Fresh shrimp served with tangy cocktail sauce.</p>
+        <div class="text-center mt-4">
+            <button class="btn btn-sm btn-warning px-4 add-to-cart" data-name="Shrimp Cocktail" data-price="12">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- Main Course -->
+    <h2 class="text-center mb-4" data-aos="fade-up">Main Course</h2>
+    <div class="row g-4 mb-5">
+    
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="menu-item p-3 rounded shadow-sm">
+        <img src="assets/images/menu/main1.jpg" class="img-fluid rounded" alt="Grilled Salmon">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Grilled Salmon</h5>
+            <span class="text-warning fw-bold">$22</span>
+        </div>
+        <p class="text-muted mt-2">Fresh Atlantic salmon with lemon butter sauce.</p>
+        <div class="text-center mt-3">
+            <button class="btn btn-sm btn-warning px-4 add-to-cart" data-name="Grilled Salmon" data-price="22">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="menu-item p-3 rounded shadow-sm">
+        <img src="assets/images/menu/main2.jpg" class="img-fluid rounded" alt="Ribeye Steak">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Ribeye Steak</h5>
+            <span class="text-warning fw-bold">$28</span>
+        </div>
+        <p class="text-muted mt-2">Tender ribeye served with fresh veggies.</p>
+        <div class="text-center mt-3">
+            <button class="btn btn-sm btn-warning px-4 add-to-cart" data-name="Ribeye Steak" data-price="28">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="menu-item p-3 rounded shadow-sm">
+        <img src="assets/images/menu/main3.jpg" class="img-fluid rounded" alt="Pasta Alfredo">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Pasta Alfredo</h5>
+            <span class="text-warning fw-bold">$18</span>
+        </div>
+        <p class="text-muted mt-2">Classic creamy Alfredo pasta with parmesan.</p>
+        <div class="text-center mt-3">
+            <button class="btn btn-sm btn-warning px-4 add-to-cart" data-name="Pasta Alfredo" data-price="18">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- Desserts -->
+    <h2 class="text-center mb-4" data-aos="fade-up">Desserts</h2>
+    <div class="row g-4 mb-5">
+    
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="menu-item p-3 rounded shadow-sm">
+        <img src="assets/images/menu/dessert1.jpg" class="img-fluid rounded" alt="Cheesecake">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Cheesecake</h5>
+            <span class="text-warning fw-bold">$7</span>
+        </div>
+        <p class="text-muted mt-2">Rich creamy cheesecake with berry topping.</p>
+        <div class="text-center mt-3">
+            <button class="btn btn-sm btn-warning px-4 add-to-cart" data-name="Cheesecake" data-price="7">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="menu-item p-3 rounded shadow-sm">
+        <img src="assets/images/menu/dessert2.jpg" class="img-fluid rounded" alt="Chocolate Lava Cake">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Chocolate Lava Cake</h5>
+            <span class="text-warning fw-bold">$9</span>
+        </div>
+        <p class="text-muted mt-2">Warm chocolate cake with molten center.</p>
+        <div class="text-center mt-3">
+            <button class="btn btn-sm btn-warning px-4 add-to-cart" data-name="Chocolate Lava Cake" data-price="9">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="menu-item p-3 rounded shadow-sm">
+        <img src="assets/images/menu/dessert3.jpg" class="img-fluid rounded" alt="Tiramisu">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Tiramisu</h5>
+            <span class="text-warning fw-bold">$8</span>
+        </div>
+        <p class="text-muted mt-2">Classic Italian dessert with coffee & mascarpone.</p>
+        <div class="text-center mt-3">
+            <button class="btn btn-sm btn-warning px-4 add-to-cart" data-name="Tiramisu" data-price="8">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- Beverages -->
+    <h2 class="text-center mb-4" data-aos="fade-up">Beverages</h2>
+    <div class="row g-4">
+    
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="menu-item p-3 rounded shadow-sm">
+        <img src="assets/images/menu/bev1.jpg" class="img-fluid rounded" alt="Fresh Lemonade">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Fresh Lemonade</h5>
+            <span class="text-warning fw-bold">$4</span>
+        </div>
+        <p class="text-muted mt-2">Refreshing homemade lemonade.</p>
+        <div class="text-center mt-3">
+            <button class="btn btn-sm btn-warning px-4 add-to-cart" data-name="Fresh Lemonade" data-price="4">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="menu-item p-3 rounded shadow-sm">
+        <img src="assets/images/menu/bev2.jpg" class="img-fluid rounded" alt="Iced Coffee">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Iced Coffee</h5>
+            <span class="text-warning fw-bold">$5</span>
+        </div>
+        <p class="text-muted mt-2">Cold brewed coffee served chilled.</p>
+        <div class="text-center mt-3">
+            <button class="btn btn-sm btn-warning px-4 add-to-cart" data-name="Iced Coffee" data-price="5">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="menu-item p-3 rounded shadow-sm">
+        <img src="assets/images/menu/bev3.jpg" class="img-fluid rounded" alt="Classic Mojito">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Classic Mojito</h5>
+            <span class="text-warning fw-bold">$7</span>
+        </div>
+        <p class="text-muted mt-2">Minty refreshing mojito cocktail.</p>
+        <div class="text-center mt-3">
+            <button class="btn btn-sm btn-warning px-4 add-to-cart" data-name="Classic Mojito" data-price="7">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">© 2025 My Premium Restaurant | Designed by Bikash</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(btn => {
+            btn.addEventListener('click', () => {
+            const itemName = btn.getAttribute('data-name');
+            const itemPrice = btn.getAttribute('data-price');
+
+            // Save to localStorage
+            localStorage.setItem('cartItemName', itemName);
+            localStorage.setItem('cartItemPrice', itemPrice);
+
+            // Redirect to payment page
+            window.location.href = 'payment.html';
+            });
+        });
+    </script>
+
+</body>
+</html>

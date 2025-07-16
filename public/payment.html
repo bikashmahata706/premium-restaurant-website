@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment | Our Premium Restaurant</title>
+  <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    .payment-form {
+      max-width: 600px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 40px;
+      animation: fadeInUp 1s ease forwards;
+    }
+    h2 {
+      font-weight: 700;
+    }
+    .form-control, .form-select {
+      border-radius: 10px;
+      padding: 15px 20px;
+    }
+    .btn-place-order {
+      border-radius: 30px;
+      padding: 12px 40px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="payment-form text-center">
+      <h2 class="mb-4">Complete Your Order</h2>
+
+      <form id="orderForm" action="/place-order" method="POST">
+        <div class="mb-3 text-start">
+          <label class="form-label">Full Name</label>
+          <input type="text" name="fullname" class="form-control" placeholder="Your Name" required>
+        </div>
+
+        <div class="mb-3 text-start">
+          <label class="form-label">Delivery Address</label>
+          <textarea class="form-control" name="address" rows="2" placeholder="Your Address" required></textarea>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-4 text-start">
+            <label class="form-label">Item Name</label>
+            <input type="text" name="item" id="itemName" class="form-control" readonly>
+          </div>
+          <div class="col-md-4 text-start">
+            <label class="form-label">Quantity</label>
+            <input type="number" name="quantity" id="quantity" class="form-control" value="1" min="1">
+          </div>
+          <div class="col-md-4 text-start">
+            <label class="form-label">Total Price($)</label>
+            <input type="text" name="price" id="totalPrice" class="form-control" readonly>
+          </div>
+        </div>
+
+        <div class="mb-4 text-start">
+          <label class="form-label">Payment Method</label>
+          <select class="form-select" name="payment" required>
+            <option selected disabled>Select Payment Option</option>
+            <option>Cash on Delivery</option>
+            <option>UPI / Card</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-success btn-place-order">Place Order</button>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap.js"></script>
+
+  <script>
+    // Get values from localStorage
+    const itemName = localStorage.getItem('cartItemName');
+    const itemPrice = parseFloat(localStorage.getItem('cartItemPrice'));
+
+    // Fill inputs
+    document.getElementById('itemName').value = itemName || '';
+    document.getElementById('totalPrice').value = itemPrice.toFixed(2);
+
+    // Disable editing
+    document.getElementById('itemName').readOnly = true;
+    document.getElementById('totalPrice').readOnly = true;
+
+    // Quantity logic
+    const qtyInput = document.getElementById('quantity');
+    qtyInput.addEventListener('input', () => {
+        const qty = parseInt(qtyInput.value) || 1;
+        document.getElementById('totalPrice').value = (itemPrice * qty).toFixed(2);
+    });
+</script>
+
+</body>
+</html>
